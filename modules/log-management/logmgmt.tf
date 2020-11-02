@@ -11,7 +11,7 @@ resource "aws_s3_bucket" "hitech_buck" {
 resource "aws_s3_bucket_object" "object" {
   bucket = aws_s3_bucket.hitech_buck.id
   key    = "log_management.yml"
-  source = "/var/lib/jenkins/workspace/Jenkins-Terrafrom-CFT-pipeline/modules/CFT/log_management.yml"
+  source = "/var/lib/jenkins/workspace/Jenkins-Terrafrom-CFT-pipeline/modules/log-management/CFT/log_management.yml"
 
 }
 
