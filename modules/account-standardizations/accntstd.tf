@@ -21,6 +21,7 @@ resource "aws_s3_bucket_object" "object" {
 resource "aws_cloudformation_stack" "acc_std" {
   depends_on = [aws_s3_bucket_object.object]
   name = "CFT-ACC-STD"
+  capabilities = ["CAPABILITY_NAMED_IAM"]
   disable_rollback = true
   parameters = {
     PermissionsBoundary = var.PermissionsBoundary
