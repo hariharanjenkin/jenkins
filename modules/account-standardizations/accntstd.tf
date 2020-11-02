@@ -18,7 +18,7 @@ resource "aws_s3_bucket_object" "object" {
 
 # CLOUDFORMATION CREATION 
 
-resource "aws_cloudformation_stack" "log_management" {
+resource "aws_cloudformation_stack" "acc_std" {
   depends_on = [aws_s3_bucket_object.object]
   name = "CFT-ACC-STD"
   disable_rollback = true
