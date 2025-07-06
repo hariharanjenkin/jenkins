@@ -1,5 +1,5 @@
 variable "OperatorEmail" {
-	default = "hitechemail@gamil.com"
+	default = "hitechemail@ht.com"
 }
 
 variable "PermissionsBoundary" {
